@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task1.css">
+</head>
+<body>
+    <script>
+        var prev = window.pageYOffset;
+        window.onscroll = function() {
+            var current = window.pageYOffset;
+            if(prev>current) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-50px";
+            } prev = current;
+        }
+    </script>
+    <nav id = "navbar">
+
+        <ul id = "ul1">
+         <li> <b>ScrollNav</b></li>
+        </ul>
+        <ul id = "ul2">
+           
+            <li> <a href="#home">Home</a> </li>
+            <li> <a href="#about"> About</a></li>
+            <li> <a href="#service">Service</a> </li>
+            <li> <a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+<div id = "home" style="margin-top: 100px;">
+<h2><u>Welcome to my page</u></h2>
+<p>
+This is a simple demo of a fixed navigation menu with scroll and hover effects
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum accusantium ipsum quae, incidunt odit velit id ea officia! Fugit et earum dolor, consectetur blanditiis quis, rem consequatur minus perferendis porro modi reprehenderit qui nemo! Beatae modi rerum ducimus iste voluptate doloribus impedit officiis iusto consequatur autem omnis voluptatum iure molestiae perspiciatis maxime excepturi voluptates, alias eaque totam! Inventore labore sequi, eaque repellendus quas rem corrupti, at sint quaerat nobis cupiditate debitis voluptatibus facilis tempore. Repellat culpa atque recusandae! Maiores ut magni quibusdam doloribus quidem voluptates ea enim molestias rerum porro nihil error fuga, perferendis laboriosam labore? Commodi inventore necessitatibus autem?
+</p>
+</div>
+<div id="about">
+<h2><u>About this project</u></h2>
+<p>
+    This project is created during my internship to demonstrate front-end development skills such as <br>
+    HTML, CSS, JavaScript and responsive design. 
+
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores ducimus sed dicta veritatis sapiente enim aut, nisi expedita quod exercitationem culpa neque numquam, commodi ut tempora eveniet pariatur voluptatem minima non quae dolores molestiae. Cumque, amet? Quae aut eum at nam, odit autem nostrum libero perspiciatis eos alias necessitatibus impedit dolorum, laudantium voluptate. Natus pariatur voluptatem necessitatibus optio sequi consequuntur alias eos ut officia officiis neque odio a, libero veritatis reiciendis obcaecati error architecto quam doloremque itaque quisquam ipsum deserunt inventore. Repellendus saepe voluptas officiis cumque accusamus aut ipsam explicabo aliquam distinctio nam? Culpa ipsum cupiditate saepe, nobis voluptatum ipsam?
+</p>
+</div>
+<div id="service">
+<h2><u>Features</u></h2>
+
+    <ul class="a">
+        <li> Fixed top navigation bar</li>
+        <li>Smooth scroll effect</li>
+        <li>Hover animation on menu items</li>
+    </ul>
+</div>
+<div id="contact">
+<h2><u>Contact</u></h2>
+<p>Email:abc@gmail.com <br>
+    Phone:+91xxxxxxxxxx <br>
+    Location: India
+</p></div>
+</body>
+</html>
